@@ -1,0 +1,1 @@
+fatal: 'feature/existing' is already checked out at '/path/to/worktree'

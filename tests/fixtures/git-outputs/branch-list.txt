@@ -1,0 +1,5 @@
+main
+develop
+feature/test
+remotes/origin/main
+remotes/origin/develop

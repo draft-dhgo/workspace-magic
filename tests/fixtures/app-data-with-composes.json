@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "repo-001",
+      "type": "repo",
+      "name": "my-project",
+      "path": "/Users/user/repos/my-project",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "skill-001",
+      "type": "skill",
+      "name": "code-review",
+      "skillMd": "---\ntitle: Code Review\n---\nReview guidelines...",
+      "files": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "agent-001",
+      "type": "agent",
+      "name": "dev-design",
+      "content": "You are a design agent.",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "command-001",
+      "type": "command",
+      "name": "deploy",
+      "content": "Deploy the application.",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "mcp-001",
+      "type": "mcp",
+      "name": "search-server",
+      "config": { "mcpServers": { "search": { "command": "npx" } } },
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "composes": [
+    {
+      "id": "compose-001",
+      "name": "frontend-workspace",
+      "repos": [{ "repoId": "repo-001", "baseBranch": "main" }],
+      "skillIds": ["skill-001"],
+      "agentIds": ["agent-001"],
+      "commandIds": ["command-001"],
+      "mcpIds": ["mcp-001"],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "test-server": {
+      "command": "npx",
+      "args": ["@mcp/test-server"],
+      "env": {
+        "API_KEY": "test-key"
+      }
+    }
+  }
+}

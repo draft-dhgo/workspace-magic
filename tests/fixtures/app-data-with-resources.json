@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "repo-001",
+      "type": "repo",
+      "name": "my-project",
+      "path": "/Users/user/repos/my-project",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "repo-002",
+      "type": "repo",
+      "name": "api-server",
+      "path": "/Users/user/repos/api-server",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "skill-001",
+      "type": "skill",
+      "name": "code-review",
+      "skillMd": "---\ntitle: Code Review\n---\nReview guidelines...",
+      "files": [
+        {
+          "relativePath": "references/guidelines.md",
+          "content": "# Guidelines\n\nReview carefully."
+        }
+      ],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "agent-001",
+      "type": "agent",
+      "name": "dev-design",
+      "content": "---\nagent: dev-design\n---\nYou are a design agent.",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "command-001",
+      "type": "command",
+      "name": "deploy",
+      "content": "Deploy the application to production.",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "mcp-001",
+      "type": "mcp",
+      "name": "search-server",
+      "config": {
+        "mcpServers": {
+          "search": {
+            "command": "npx",
+            "args": ["@mcp/search-server"]
+          }
+        }
+      },
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "composes": []
+}

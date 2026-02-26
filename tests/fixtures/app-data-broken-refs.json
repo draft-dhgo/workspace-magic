@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "repo-001",
+      "type": "repo",
+      "name": "my-project",
+      "path": "/Users/user/repos/my-project",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "composes": [
+    {
+      "id": "compose-001",
+      "name": "broken-compose",
+      "repos": [
+        { "repoId": "repo-001", "baseBranch": "main" },
+        { "repoId": "deleted-repo-999", "baseBranch": "main" }
+      ],
+      "skillIds": ["deleted-skill-999"],
+      "agentIds": ["deleted-agent-999"],
+      "commandIds": [],
+      "mcpIds": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ]
+}
